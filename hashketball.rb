@@ -223,9 +223,6 @@ def most_points_scored
 end
 
 def winning_team
-  # Set up a hash to keep track of the points scored by each team. This way, we
-  # can iterate through each player, get their points scored, and increase the
-  # count in the hash.
 
   scores = { 'Brooklyn Nets' => 0, 'Charlotte Hornets' => 0 }
 
@@ -242,7 +239,7 @@ def player_with_longest_name
   player_with_most_of(:player_name)
 end
 
-# # Super Bonus Question
+
 
 def long_name_steals_a_ton?
   player_with_most_of(:steals) == player_with_most_of(:player_name)
